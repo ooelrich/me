@@ -5,8 +5,10 @@ project:
 website:
   title: "Oscar Oelrich"
   navbar:
+    search: true
     left:
-      - href: about.qmd
+      - text: Home
+      - href: index.qmd
       - href: publications.qmd
       - href: blog.qmd
       - href: contact.qmd

@@ -9,12 +9,12 @@ about:
       text: E-mail
       href: mailto:oscar.oelrich@stat.su.se
     - icon: github
-      text: Github
+      text: GitHub
       href: https://github.com/ooelrich
 ---
 
-I am subjectivist statistician (or data scientist as the kids say) currently employed as a lecturer at [Stockholm University](https://www.su.se/statistiska-institutionen/). My main areas of interest are model evaluation, prediction, programming and teaching.
+I am a subjectivist statistician (or data scientist as the kids say) currently employed as a lecturer at [Stockholm University](https://www.su.se/statistiska-institutionen/). My main areas of interest are model evaluation, prediction, programming and teaching.
 
-I obtained my Ph.D from the department of Statistics at Stockholm University in 2022 under the supervision of [Mattias Villani](https://mattiasvillani.com). The main focus of my thesis was on exploring novel ways of combining predictive distribution, for example using Gaussian processes to model the joint posterior distribution of the predictive accuracy of a set of experts.
+I obtained my Ph. D. from the Department of Statistics at Stockholm University in 2022 under the supervision of [Mattias Villani](https://mattiasvillani.com). The main focus of my thesis was on exploring novel ways of combining predictive distribution, for example using Gaussian processes to model the joint posterior distribution of the predictive accuracy of a set of experts.
 
 

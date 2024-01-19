@@ -1,5 +1,12 @@
 [
   {
+    "objectID": "contact.html",
+    "href": "contact.html",
+    "title": "Contact",
+    "section": "",
+    "text": "oscar.oelrich(at)stat.su.se"
+  },
+  {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Blog",
@@ -18,7 +25,7 @@
     "href": "about.html",
     "title": "About",
     "section": "",
-    "text": "Who am I?"
+    "text": "I am Oscar."
   },
   {
     "objectID": "blog.html",

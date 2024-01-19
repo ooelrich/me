@@ -9,6 +9,7 @@ website:
       - href: about.qmd
       - href: publications.qmd
       - href: blog.qmd
+      - href: contact.qmd
 
 format:
   html:

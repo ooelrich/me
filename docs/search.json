@@ -1,24 +1,17 @@
 [
   {
-    "objectID": "contact.html",
-    "href": "contact.html",
-    "title": "Contact",
-    "section": "",
-    "text": "oscar.oelrich(at)stat.su.se"
-  },
-  {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "About",
+    "title": "Oscar Oelrich",
     "section": "",
-    "text": "WIP."
+    "text": "I am subjectivist statistician (or data scientist as the kids say) currently employed as a lecturer at Stockholm University. My main areas of interest are model evaluation, prediction, programming and teaching.\nI obtained my Ph.D from the department of Statistics at Stockholm University in 2022 under the supervision of Mattias Villani. The main focus of my thesis was on exploring novel ways of combining predictive distribution, for example using Gaussian processes to model the joint posterior distribution of the predictive accuracy of a set of experts."
   },
   {
     "objectID": "publications.html",
     "href": "publications.html",
     "title": "Publications",
     "section": "",
-    "text": "Peer-reviewed\n\n\nPre-prints\n\n\nOther"
+    "text": "Peer-reviewed\nOscar Oelrich, Mattias Villani, Sebastian Ankargren. 2024. ”Local prediction pools.” Journal of Forecasting 43(1): 103–107. Open access.\n\n\nPre-prints\nOscar Oelrich, Shutong Ding, Måns Magnusson, Aki Vehtari, Mattias Villani. ”When are Bayesian model probabilities overconfident?” https://arxiv.org/abs/2003.04026\n\n\nOther\nOscar Oelrich (2022). Learning local predictive accuracy for expert evaluation and forecast combination. Dissertation for the degree of Doctor of Philosophy in Statistics, Stockholm University. The kappa can be found here.\nOscar Oelrich (2014). Causal Inference Using Propensity Score Matching in Clustered Data. Master’s thesis, Uppsala University. The full text can be found here."
   },
   {
     "objectID": "blog.html",

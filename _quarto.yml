@@ -7,10 +7,10 @@ website:
   navbar:
     search: true
     left:
-      - href: index.qmd
-      - href: publications.qmd
-      - href: blog.qmd
-      - href: contact.qmd
+      - text: "About"
+        file: index.qmd
+      - publications.qmd
+      - blog.qmd
 
 format:
   html:

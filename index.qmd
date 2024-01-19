@@ -1,5 +1,5 @@
 ---
-title: "Oscar Oelrich"
+title: "About"
 ---
 
 WIP.

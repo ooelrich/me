@@ -8,7 +8,6 @@ website:
     search: true
     left:
       - href: index.qmd
-      - text: About
       - href: publications.qmd
       - href: blog.qmd
       - href: contact.qmd

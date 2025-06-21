@@ -9,13 +9,14 @@
 <link>https://ooelrich.github.io/me/blog.html</link>
 <atom:link href="https://ooelrich.github.io/me/blog.xml" rel="self" type="application/rss+xml"/>
 <description>Gaussian terrors</description>
-<generator>quarto-1.3.353</generator>
+<generator>quarto-1.7.32</generator>
 <lastBuildDate>Mon, 17 Jun 2024 22:00:00 GMT</lastBuildDate>
 <item>
   <title>Selection effects</title>
   <dc:creator>Oscar Oelrich</dc:creator>
   <link>https://ooelrich.github.io/me/posts/2406-selection-models.html</link>
   <description><![CDATA[ 
+
 
 
 
@@ -28,7 +29,7 @@
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="https://ooelrich.github.io/me/posts/2406-selection-models_files/figure-html/unnamed-chunk-1-1.png" class="img-fluid figure-img" width="672"></p>
-<figcaption class="figure-caption">Figure 1: Estimated regression lines based on the full sample (black), and a subset consisting of only those who work (turquoise).</figcaption>
+<figcaption>Figure 1: Estimated regression lines based on the full sample (black), and a subset consisting of only those who work (turquoise).</figcaption>
 </figure>
 </div>
 </div>
@@ -40,7 +41,7 @@
 
 
 
-<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent">
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0">
 <div id="ref-heckman_sample_1979" class="csl-entry">
 Heckman, James J. 1979. <span>“Sample <span>Selection</span> <span>Bias</span> as a <span>Specification</span> <span>Error</span>.”</span> <em>Econometrica</em> 47 (1): 153. <a href="https://doi.org/10.2307/1912352">https://doi.org/10.2307/1912352</a>.
 </div>

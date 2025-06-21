@@ -1,27 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://ooelrich.github.io/me/blog.html/posts/selection-models.html</loc>
-    <lastmod>2024-06-18T09:54:05.982Z</lastmod>
-  </url>
-  <url>
-    <loc>https://ooelrich.github.io/me/blog.html/index.html</loc>
-    <lastmod>2024-06-18T09:53:59.379Z</lastmod>
-  </url>
-  <url>
-    <loc>https://ooelrich.github.io/me/blog.html/publications.html</loc>
-    <lastmod>2024-06-18T09:53:59.656Z</lastmod>
-  </url>
-  <url>
-    <loc>https://ooelrich.github.io/me/blog.html/blog.html</loc>
-    <lastmod>2024-06-18T09:54:10.035Z</lastmod>
-  </url>
-  <url>
     <loc>https://ooelrich.github.io/me/blog.html</loc>
-    <lastmod>2024-07-01T09:40:29.841Z</lastmod>
+    <lastmod>2024-06-18T09:52:06.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ooelrich.github.io/me/index.html</loc>
+    <lastmod>2025-06-21T10:37:06.546Z</lastmod>
   </url>
   <url>
     <loc>https://ooelrich.github.io/me/posts/2406-selection-models.html</loc>
-    <lastmod>2024-07-01T09:40:29.540Z</lastmod>
+    <lastmod>2024-07-01T09:40:28.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ooelrich.github.io/me/publications.html</loc>
+    <lastmod>2024-02-14T15:39:55.000Z</lastmod>
   </url>
 </urlset>

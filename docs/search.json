@@ -11,7 +11,7 @@
     "href": "index.html",
     "title": "Oscar Oelrich",
     "section": "",
-    "text": "I am a statistician (or data scientist as the kids say) currently employed at Division of Insurance Medicine. My main areas of interest are model evaluation, prediction, statistical programming and teaching.\nI obtained my PhD from the Department of Statistics at Stockholm University in 2022 under the supervision of Mattias Villani. The main focus of my thesis was on exploring novel ways of combining predictive distributions, for example using Gaussian processes to model the joint posterior distribution of the predictive accuracy of a set of experts."
+    "text": "I am a statistician currently employed at the Division of Insurance Medicine at Karolinska Institutet. My main areas of interest are model evaluation, prediction, statistical programming and teaching.\nI obtained my PhD from the Department of Statistics at Stockholm University in 2022 under the supervision of Mattias Villani. The main focus of my thesis was on exploring novel ways of combining predictive distributions, for example using Gaussian processes to model the joint posterior distribution of the predictive accuracy of a set of experts."
   },
   {
     "objectID": "posts/2406-selection-models.html",

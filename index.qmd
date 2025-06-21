@@ -7,7 +7,7 @@ about:
   links:
     - icon: send-fill
       text: E-mail
-      href: mailto:oscar.oelrich@stat.su.se
+      href: mailto:oscar.oelrich@live.com
     - icon: github
       text: GitHub
       href: https://github.com/ooelrich

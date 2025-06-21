@@ -6,8 +6,11 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Oscar Oelrich">
+<meta name="dcterms.date" content="2024-06-18">
+<meta name="description" content="A simple simulation study">
 
-<title>Oscar Oelrich - Publications</title>
+<title>Oscar Oelrich - Selection effects</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,25 +23,44 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-html/quarto.js"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -59,8 +81,10 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="../styles.css">
 </head>
 
 <body class="nav-fixed">
@@ -70,7 +94,7 @@ ul.task-list li input[type="checkbox"] {
     <nav class="navbar navbar-expand-lg navbar-dark ">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../index.html">
     <span class="navbar-title">Oscar Oelrich</span>
     </a>
   </div>
@@ -81,23 +105,23 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./index.html" rel="" target="">
+    <a class="nav-link" href="../index.html" rel="" target="">
  <span class="menu-text">About</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./publications.html" rel="" target="" aria-current="page">
+    <a class="nav-link" href="../publications.html" rel="" target="">
  <span class="menu-text">Publications</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./blog.html" rel="" target="">
+    <a class="nav-link" href="../blog.html" rel="" target="">
  <span class="menu-text">Blog</span></a>
   </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
-  <li class="nav-item compact">
-    <a class="nav-link" href="./index.xml" rel="" target=""><i class="bi bi-rss" role="img">
+  <li class="nav-item">
+    <a class="nav-link" href="../blog.html" rel="" target=""><i class="bi bi-rss" role="img">
 </i> 
- <span class="menu-text"></span></a>
+ <span class="menu-text">Blog</span></a>
   </li>  
 </ul>
             <div class="quarto-navbar-tools">
@@ -111,29 +135,43 @@ ul.task-list li input[type="checkbox"] {
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
-   
-  <ul>
-  <li><a href="#peer-reviewed" id="toc-peer-reviewed" class="nav-link active" data-scroll-target="#peer-reviewed">Peer-reviewed</a></li>
-  <li><a href="#pre-prints" id="toc-pre-prints" class="nav-link" data-scroll-target="#pre-prints">Pre-prints</a></li>
-  <li><a href="#other" id="toc-other" class="nav-link" data-scroll-target="#other">Other</a></li>
-  </ul>
-</nav>
+        
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Publications</h1>
-</div>
+<h1 class="title">Selection effects</h1>
+  <div class="quarto-categories">
+    <div class="quarto-category">statistics</div>
+    <div class="quarto-category">simulation</div>
+    <div class="quarto-category">heckman</div>
+  </div>
+  </div>
 
+<div>
+  <div class="description">
+    A simple simulation study
+  </div>
+</div>
 
 
 <div class="quarto-title-meta">
 
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Oscar Oelrich </p>
+          </div>
+  </div>
     
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">June 18, 2024</p>
+    </div>
+  </div>
   
     
   </div>
@@ -141,25 +179,34 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<section id="peer-reviewed" class="level1">
-<h1>Peer-reviewed</h1>
-<p>Oscar Oelrich, Mattias Villani, Sebastian Ankargren. 2024. ”Local prediction pools.” Journal of Forecasting 43(1): 103–107. <a href="https://onlinelibrary.wiley.com/doi/10.1002/for.3030">Open access</a>.</p>
-</section>
-<section id="pre-prints" class="level1">
-<h1>Pre-prints</h1>
-<p>Oscar Oelrich, Shutong Ding, Måns Magnusson, Aki Vehtari, Mattias Villani. ”When are Bayesian model probabilities overconfident?” <a href="https://arxiv.org/abs/2003.04026" class="uri">https://arxiv.org/abs/2003.04026</a></p>
-<p>Oscar Oelrich, Mattias Villani. “Joint estimation of the predictive ability of experts using a multi-output Gaussian process.” <a href="https://arxiv.org/abs/2402.07439" class="uri">https://arxiv.org/abs/2402.07439</a></p>
-<p>Oscar Oelrich, Mattias Villani. “Modeling local predictive ability using power-transformed Gaussian processes.” <a href="https://arxiv.org/abs/2402.02068" class="uri">https://arxiv.org/abs/2402.02068</a></p>
-</section>
-<section id="other" class="level1">
-<h1>Other</h1>
-<p>Oscar Oelrich (2022). Learning local predictive accuracy for expert evaluation and forecast combination. Dissertation for the degree of Doctor of Philosophy in Statistics, Stockholm University. The kappa can be found <a href="http://www.diva-portal.org/smash/record.jsf?pid=diva2%3A1708601&amp;dswid=-4706">here</a>.</p>
-<p>Oscar Oelrich (2014). Causal Inference Using Propensity Score Matching in Clustered Data. Master’s thesis, Uppsala University. The full text can be found <a href="https://uu.diva-portal.org/smash/record.jsf?dswid=5279&amp;pid=diva2%3A723279&amp;c=2&amp;searchType=SIMPLE&amp;language=en&amp;query=oscar+oelrich&amp;af=%5B%5D&amp;aq=%5B%5B%5D%5D&amp;aq2=%5B%5B%5D%5D&amp;aqe=%5B%5D&amp;noOfRows=50&amp;sortOrder=author_sort_asc&amp;sortOrder2=title_sort_asc&amp;onlyFullText=false&amp;sf=all">here</a>.</p>
+<p>Let’s imagine a profession where your salary is linearly related to your skill level:</p>
+<p><span class="math display">\[
+\texttt{salary}_i = \alpha + \beta\;\texttt{skill}_i + \varepsilon_i, \qquad \varepsilon_i \overset{iid}{\sim} \operatorname{N}(0, \sigma^2)\;.
+\]</span></p>
+<p>Given a random sample we can easily get an unbiased estimate of <span class="math inline">\(\beta\)</span>, but in applied work the mechanisms determining the sample are not fully random. For example, imagine that we live in a world with universal basic income where only people with a salary above a certain threshold are willing to work. What will happen with our estimate of <span class="math inline">\(\beta\)</span> when we subset our data to only include people with a salary above the threshold?</p>
+<p>To explore this we generate a data set of <span class="math inline">\(500\)</span> observation, where the values of <span class="math inline">\(\texttt{skill}\)</span> are random draws from a <span class="math inline">\(U(0, 8)\)</span> distribution, with <span class="math inline">\(\alpha = 0\)</span> and <span class="math inline">\(\beta = 1/2\)</span>. The cutoff for <span class="math inline">\(\texttt{salary}\)</span>, i.e.&nbsp;the level of universal basic income, is set to <span class="math inline">\(3\)</span>.</p>
+<div class="cell">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="2406-selection-models_files/figure-html/unnamed-chunk-1-1.png" class="img-fluid figure-img" width="672"></p>
+<figcaption class="figure-caption">Figure 1: Estimated regression lines based on the full sample (black), and a subset consisting of only those who work (turquoise).</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p>As can be seen in Figure 1, limiting our sample to the subset of people who actually work biases our estimate of <span class="math inline">\(\beta\)</span>, in this case leading to a sever underestimate. This is what is known as a selection effect. Interesting enough, subsetting based on the variable skill would <em>not</em> have biased our estimate of <span class="math inline">\(\beta\)</span>.</p>
+<p>The reason for the bias is that in the model that we estimate with only the working subsample, <span class="math inline">\(\texttt{skill}\)</span> is no longer exogenous. The assumption of exogeneity states that the conditional expectation of the errors given the covariate should be <span class="math inline">\(0\)</span> <span class="math inline">\({(\operatorname{E}(\varepsilon \mid \texttt{skill}) = 0)}\)</span> which does not hold in the subsample. For example, when <span class="math inline">\(\texttt{skill} = 6\)</span> the errors follow a normal distribution truncated at zero resulting in all nonnegative errors.</p>
+<p>All is not lost however, and as long as we can <em>model</em> the selection mechanism we can remove the bias in our estimates. To do this, we break our model down into two equations. The first equation we will call the <em>selection equation</em>. It models the conditional probability that a person works, given their skill level. The second equation we will call the <em>outcome equation</em>. It models the conditional expectation of the wage, given the skill level. Our main interest lies in estimating the <span class="math inline">\(\beta\)</span> coefficient in the outcome regression, given that we only observe the outcome for those who work. We will use the selection equation as a first step, which will help us correct for this bias. This method is known as Heckman correction <span class="citation" data-cites="heckman_sample_1979">(<a href="#ref-heckman_sample_1979" role="doc-biblioref">Heckman 1979</a>)</span>.</p>
 
 
-</section>
 
-</main> <!-- /main -->
+
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" role="list">
+<div id="ref-heckman_sample_1979" class="csl-entry" role="listitem">
+Heckman, James J. 1979. <span>“Sample <span>Selection</span> <span>Bias</span> as a <span>Specification</span> <span>Error</span>.”</span> <em>Econometrica</em> 47 (1): 153. <a href="https://doi.org/10.2307/1912352">https://doi.org/10.2307/1912352</a>.
+</div>
+</div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {

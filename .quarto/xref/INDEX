@@ -10,5 +10,11 @@
   },
   "blog.qmd": {
     "blog.html": "3ea14095"
+  },
+  "posts/selection-models.qmd": {
+    "selection-models.html": "4b14977f"
+  },
+  "posts/2406-selection-models.qmd": {
+    "2406-selection-models.html": "10c759a4"
   }
 }

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss  xmlns:atom="http://www.w3.org/2005/Atom" 
+      xmlns:media="http://search.yahoo.com/mrss/" 
+      xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+      xmlns:dc="http://purl.org/dc/elements/1.1/" 
+      version="2.0">
+<channel>
+<title>Oscar Oelrich</title>
+<link>https://ooelrich.github.io/me/blog.html</link>
+<atom:link href="https://ooelrich.github.io/me/blog.xml" rel="self" type="application/rss+xml"/>
+<description>Gaussian terrors</description>
+<generator>quarto-1.3.353</generator>
+<lastBuildDate>Mon, 17 Jun 2024 22:00:00 GMT</lastBuildDate>
+<item>
+  <title>Selection effects</title>
+  <dc:creator>Oscar Oelrich</dc:creator>
+  <link>https://ooelrich.github.io/me/posts/2406-selection-models.html</link>
+  <description><![CDATA[ 
+
+
+
+<p>Let’s imagine a profession where your salary is linearly related to your skill level:</p>
+<p><img src="https://latex.codecogs.com/png.latex?%0A%5Ctexttt%7Bsalary%7D_i%20=%20%5Calpha%20+%20%5Cbeta%5C;%5Ctexttt%7Bskill%7D_i%20+%20%5Cvarepsilon_i,%20%5Cqquad%20%5Cvarepsilon_i%20%5Coverset%7Biid%7D%7B%5Csim%7D%20%5Coperatorname%7BN%7D(0,%20%5Csigma%5E2)%5C;.%0A"></p>
+<p>Given a random sample we can easily get an unbiased estimate of <img src="https://latex.codecogs.com/png.latex?%5Cbeta">, but in applied work the mechanisms determining the sample are not fully random. For example, imagine that we live in a world with universal basic income where only people with a salary above a certain threshold are willing to work. What will happen with our estimate of <img src="https://latex.codecogs.com/png.latex?%5Cbeta"> when we subset our data to only include people with a salary above the threshold?</p>
+<p>To explore this we generate a data set of <img src="https://latex.codecogs.com/png.latex?500"> observation, where the values of <img src="https://latex.codecogs.com/png.latex?%5Ctexttt%7Bskill%7D"> are random draws from a <img src="https://latex.codecogs.com/png.latex?U(0,%208)"> distribution, with <img src="https://latex.codecogs.com/png.latex?%5Calpha%20=%200"> and <img src="https://latex.codecogs.com/png.latex?%5Cbeta%20=%201/2">. The cutoff for <img src="https://latex.codecogs.com/png.latex?%5Ctexttt%7Bsalary%7D">, i.e.&nbsp;the level of universal basic income, is set to <img src="https://latex.codecogs.com/png.latex?3">.</p>
+<div class="cell">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://ooelrich.github.io/me/posts/2406-selection-models_files/figure-html/unnamed-chunk-1-1.png" class="img-fluid figure-img" width="672"></p>
+<figcaption class="figure-caption">Figure 1: Estimated regression lines based on the full sample (black), and a subset consisting of only those who work (turquoise).</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p>As can be seen in Figure 1, limiting our sample to the subset of people who actually work biases our estimate of <img src="https://latex.codecogs.com/png.latex?%5Cbeta">, in this case leading to a sever underestimate. This is what is known as a selection effect. Interesting enough, subsetting based on the variable skill would <em>not</em> have biased our estimate of <img src="https://latex.codecogs.com/png.latex?%5Cbeta">.</p>
+<p>The reason for the bias is that in the model that we estimate with only the working subsample, <img src="https://latex.codecogs.com/png.latex?%5Ctexttt%7Bskill%7D"> is no longer exogenous. The assumption of exogeneity states that the conditional expectation of the errors given the covariate should be <img src="https://latex.codecogs.com/png.latex?0"> <img src="https://latex.codecogs.com/png.latex?%7B(%5Coperatorname%7BE%7D(%5Cvarepsilon%20%5Cmid%20%5Ctexttt%7Bskill%7D)%20=%200)%7D"> which does not hold in the subsample. For example, when <img src="https://latex.codecogs.com/png.latex?%5Ctexttt%7Bskill%7D%20=%206"> the errors follow a normal distribution truncated at zero resulting in all nonnegative errors.</p>
+<p>All is not lost however, and as long as we can <em>model</em> the selection mechanism we can remove the bias in our estimates. To do this, we break our model down into two equations. The first equation we will call the <em>selection equation</em>. It models the conditional probability that a person works, given their skill level. The second equation we will call the <em>outcome equation</em>. It models the conditional expectation of the wage, given the skill level. Our main interest lies in estimating the <img src="https://latex.codecogs.com/png.latex?%5Cbeta"> coefficient in the outcome regression, given that we only observe the outcome for those who work. We will use the selection equation as a first step, which will help us correct for this bias. This method is known as Heckman correction <span class="citation" data-cites="heckman_sample_1979">(Heckman 1979)</span>.</p>
+
+
+
+
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent">
+<div id="ref-heckman_sample_1979" class="csl-entry">
+Heckman, James J. 1979. <span>“Sample <span>Selection</span> <span>Bias</span> as a <span>Specification</span> <span>Error</span>.”</span> <em>Econometrica</em> 47 (1): 153. <a href="https://doi.org/10.2307/1912352">https://doi.org/10.2307/1912352</a>.
+</div>
+</div></section></div> ]]></description>
+  <category>statistics</category>
+  <category>simulation</category>
+  <category>heckman</category>
+  <guid>https://ooelrich.github.io/me/posts/2406-selection-models.html</guid>
+  <pubDate>Mon, 17 Jun 2024 22:00:00 GMT</pubDate>
+</item>
+</channel>
+</rss>

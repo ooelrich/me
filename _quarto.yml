@@ -4,6 +4,8 @@ project:
 
 website:
   title: "Oscar Oelrich"
+  site-url: https://ooelrich.github.io/me/
+  description: "Gaussian terrors"
   navbar:
     search: true
     left:
@@ -11,6 +13,9 @@ website:
         file: index.qmd
       - publications.qmd
       - blog.qmd
+    right:
+      - icon: rss
+        href: blog.qmd
 
 format:
   html:

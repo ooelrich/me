@@ -13,7 +13,7 @@ about:
       href: https://github.com/ooelrich
 ---
 
-I am a subjectivist statistician (or data scientist as the kids say) currently employed as a lecturer at [Stockholm University](https://www.su.se/statistiska-institutionen/). My main areas of interest are model evaluation, prediction, programming and teaching.
+I am a statistician (or data scientist as the kids say) currently employed at [Division of Insurance Medicine](https://ki.se/en/cns/research/division-of-insurance-medicine). My main areas of interest are model evaluation, prediction, statistical programming and teaching.
 
 I obtained my PhD from the Department of Statistics at Stockholm University in 2022 under the supervision of [Mattias Villani](https://mattiasvillani.com). The main focus of my thesis was on exploring novel ways of combining predictive distributions, for example using Gaussian processes to model the joint posterior distribution of the predictive accuracy of a set of experts.
 
